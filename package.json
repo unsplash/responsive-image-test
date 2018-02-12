@@ -1,0 +1,20 @@
+{
+  "name": "responsive-image-test",
+  "version": "0.0.0",
+  "module": "target/index.js",
+  "devDependencies": {
+    "parse-sizes": "albell/parse-sizes#master",
+    "rollup": "^0.55.5",
+    "rollup-plugin-legacy": "^1.0.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "typescript": "^2.7.1"
+  },
+  "files": [
+    "target"
+  ],
+  "scripts": {
+    "cleanTargets": "rm -rf './target' './target-{tsc,rollup}'",
+    "compile": "tsc && rollup -c && cp -r './target-rollup' './target'",
+    "prepublishOnly": "npm run cleanTargets && npm run compile"
+  }
+}

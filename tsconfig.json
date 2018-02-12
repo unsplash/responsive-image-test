@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2015",
+    "noImplicitReturns": true,
+    "strict": true,
+    "outDir": "./target-tsc",
+    // This guarantees the output directory structure will always remain the same regardless of what
+    // gets compiled. (By default, TypeScript will use the closest ancestor directory of all
+    // imports, which can of course change with changes to the dependency graph.)
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "sourceMap": true
+  },
+  "files": ["./src/typings.d.ts", "./src/index.ts"]
+}
