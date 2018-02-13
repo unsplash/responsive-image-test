@@ -1,6 +1,6 @@
 {
   "name": "responsive-image-test",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "module": "target/index.js",
   "devDependencies": {
     "parse-sizes": "albell/parse-sizes#master",
